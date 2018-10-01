@@ -1,9 +1,10 @@
-var Widget = require('web.Widget');
-var AbstractAction = require('web.AbstractAction');
+
+
 
 odoo.define('awesome_tshirt.dashboard', function (require) {
     "use strict";
 
+    var AbstractAction = require('web.AbstractAction');
     var ClientAction = AbstractAction.extend({
         init: function() {
             console.log('Hello world!');
@@ -11,6 +12,8 @@ odoo.define('awesome_tshirt.dashboard', function (require) {
     });
 
     core.action_registry.add('tshirt-dashboard', ClientAction);
+
+    var Widget = require('web.Widget');
 
     return '';
 });

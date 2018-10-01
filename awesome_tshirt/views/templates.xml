@@ -118,6 +118,24 @@
   </template>
 
   <template id="awesome_tshirt.test-div" name="Awesome T-Shirt test div">
+    <div id="wrap">
+        <div class="container mt-2">
+          <div class="row">
+            <div class="col-lg-8">
+              <div>
+                <form action="/awesome_tshirt/order" method="post" class="container-fluid mt32" enctype="multipart/form-data" data-editable-form="false">
+                  <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                  <div class="form-group row">
+                    <div class="col-md-8 col-lg-7">
+                      <button href="#" role="button" class="btn btn-primary">Make another order</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </template>
 
 </odoo>
