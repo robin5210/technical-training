@@ -5,7 +5,6 @@ odoo.define('awesome_tshirt.dashboard', function (require) {
     "use strict";
 
     var AbstractAction = require('web.AbstractAction');
-    var ClientAction = AbstractAction();
 
     var core = require('web.core');
 
