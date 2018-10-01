@@ -16,7 +16,7 @@ odoo.define('awesome_tshirt.dashboard', function (require) {
 });
 
 var Counter = Widget.extend({
-    template: 'some.template',
+    template: 'awesome_tshirt.test-div',
     events: {
         'click button': '_onClick',
     },
