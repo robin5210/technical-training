@@ -117,4 +117,41 @@
     </t>
   </template>
 
+  <template id="awesome_tshirt.test-div" name="Awesome T-Shirt test div">
+    <t t-call="web.layout">
+      <t t-set="head">
+        <t t-call-assets="web.assets_frontend" t-js="false"/>
+      </t>
+      <div id="wrap">
+        <div class="oe_structure">
+          <section class="pt8 pb8">
+            <div class="container">
+              <div class="row s_nb_column_fixed">
+                <div class="col-lg-12 s_title pt16 pb16">
+                  <h1>Thanks for your order!</h1>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="container mt-2">
+          <div class="row">
+            <div class="col-lg-8">
+              <div>
+                <form action="/awesome_tshirt/order" method="post" class="container-fluid mt32" enctype="multipart/form-data" data-editable-form="false">
+                  <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                  <div class="form-group row">
+                    <div class="col-md-8 col-lg-7">
+                      <button href="#" role="button" class="btn btn-primary">Make another order</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </t>
+  </template>
+
 </odoo>

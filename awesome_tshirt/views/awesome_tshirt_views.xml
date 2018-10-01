@@ -91,14 +91,14 @@
     </record>
 
   <!-- client actions -->
-    <record id="menu-action" model="ir.actions.client">
-      <field name="name">Menu action</field>
-      <field name="tag">menu-action</field>
+    <record id="tshirt_dashboard" model="ir.actions.client">
+      <field name="name">T-Shirt Dashboard</field>
+      <field name="tag">tshirt-dashboard</field>
     </record>
 
     <!-- menu items -->
     <menuitem name="Awesome T-Shirts" id="awesome_tshirt.menu_root" groups="base.group_user" web_icon="awesome_tshirt,static/description/icon.png"/>
     <menuitem name="Orders" id="awesome_tshirt.order" parent="awesome_tshirt.menu_root" action="awesome_tshirt.orders"/>
-    <menuitem name="Menu action" id="awesome_tshirt.menu-action" parent="awesome_tshirt.menu_root" action="awesome_tshirt.menu-action"/>
+    <menuitem name="T-Shirt Dashboard" id="awesome_tshirt.tshirt_dashboard" parent="awesome_tshirt.menu_root" action="awesome_tshirt.tshirt_dashboard"/>
 
 </odoo>
