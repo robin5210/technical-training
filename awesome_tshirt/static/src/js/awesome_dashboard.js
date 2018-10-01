@@ -15,18 +15,18 @@ odoo.define('awesome_tshirt.dashboard', function (require) {
     return '';
 });
 
-var Counter = Widget.extend({
-    template: 'awesome_tshirt.test-div',
-    events: {
-        'click button': '_onClick',
-    },
-    init: function (parent, value) {
-        this._super(parent);
-        this.count = value;
-    },
-    _onClick: function () {
-        this.count++;
-        this.$('.val').text(this.count);
-    },
-});
+// var Counter = Widget.extend({
+//     template: 'awesome_tshirt.test-div',
+//     events: {
+//         'click button': '_onClick',
+//     },
+//     init: function (parent, value) {
+//         this._super(parent);
+//         this.count = value;
+//     },
+//     _onClick: function () {
+//         this.count++;
+//         this.$('.val').text(this.count);
+//     },
+// });
 
